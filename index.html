@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wall Decor Berkah</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer>
+    // Scroll animation
+    document.addEventListener("DOMContentLoaded", function () {
+      const scrollElems = document.querySelectorAll("[data-animate]");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-fadeInUp");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      scrollElems.forEach(elem => observer.observe(elem));
+    });
+
+    // FAQ toggle
+    function toggleFAQ(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle("hidden");
+    }
+
+    // WhatsApp popup
+    window.addEventListener("scroll", () => {
+      const popup = document.getElementById("waPopup");
+      if (window.scrollY > 300) popup.classList.remove("hidden");
+    });
+  </script>
+  <style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans scroll-smooth">
+
+  <!-- Hero Section Baru -->
+<section class="relative h-[90vh] bg-cover bg-center" style="background-image: url('img/img1.jpg');">
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+    <div class="text-center px-6 text-white max-w-2xl animate-fadeInUp">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-lg mb-4">
+        Wall Decor Berkah
+      </h1>
+      <p class="text-lg md:text-xl mb-6 font-light">
+  Karya seni hiasan dinding bermotif alam, menghadirkan nuansa tenang & elegan ke dalam ruang Anda.
+</p>
+      <a href="https://wa.me/6281234567890" target="_blank"
+         class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold text-lg px-6 py-3 rounded-full shadow-lg transition duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20.52 3.48a11.8 11.8 0 0 0-16.7 0 11.8 11.8 0 0 0-2.79 12.3L0 24l8.38-2.2a11.8 11.8 0 0 0 5.7 1.45c3.2 0 6.23-1.25 8.49-3.51a11.8 11.8 0 0 0 0-16.7Zm-8.7 17.1a9.48 9.48 0 0 1-4.87-1.31l-.35-.21-4.97 1.3 1.33-4.84-.23-.37a9.5 9.5 0 1 1 9.09 5.43Zm5.22-6.94c-.29-.15-1.71-.84-1.97-.94s-.46-.15-.65.15-.74.93-.91 1.12-.34.22-.63.07a7.74 7.74 0 0 1-2.28-1.4 8.56 8.56 0 0 1-1.58-1.97c-.16-.27-.02-.42.12-.57.13-.13.29-.34.43-.5s.19-.29.29-.48a.6.6 0 0 0-.03-.56c-.07-.15-.65-1.56-.89-2.14-.23-.56-.47-.48-.65-.49l-.56-.01a1.07 1.07 0 0 0-.77.36 3.21 3.21 0 0 0-1 2.4c0 1.41 1.02 2.78 1.16 2.97.14.2 2 3.17 4.85 4.45 1.8.78 2.5.85 3.4.72.55-.08 1.71-.7 1.95-1.37.24-.67.24-1.25.17-1.37-.07-.12-.27-.2-.56-.35Z"/>
+        </svg>
+        Chat Admin Sekarang
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Galeri Produk Interaktif -->
+<section class="py-16 bg-gray-50" data-animate>
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Galeri Produk Unggulan</h2>
+
+    <div class="flex overflow-x-auto gap-6 pb-4">
+      <!-- Item Produk -->
+      <div class="min-w-[250px] relative group bg-white rounded-xl shadow hover:shadow-xl transition duration-300">
+        <img src="img/img1.jpg" alt="Produk 1" class="rounded-t-xl object-cover w-full h-64 group-hover:scale-105 transition-transform duration-300" />
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Motif Daun Elegan</h3>
+          <p class="text-sm text-gray-500">Cocok untuk ruang tamu atau ruang kerja.</p>
+          <a href="https://wa.me/6281234567890" target="_blank" class="mt-3 inline-block bg-green-500 text-white text-sm px-4 py-2 rounded-full hover:bg-green-600 transition">Lihat Detail</a>
+        </div>
+      </div>
+      
+      <!-- Item Produk -->
+      <div class="min-w-[250px] relative group bg-white rounded-xl shadow hover:shadow-xl transition duration-300">
+        <img src="img/img2.jpg" alt="Produk 1" class="rounded-t-xl object-cover w-full h-64 group-hover:scale-105 transition-transform duration-300" />
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Motif Daun Elegan</h3>
+          <p class="text-sm text-gray-500">Cocok untuk ruang tamu atau ruang kerja.</p>
+          <a href="https://wa.me/6281234567890" target="_blank" class="mt-3 inline-block bg-green-500 text-white text-sm px-4 py-2 rounded-full hover:bg-green-600 transition">Lihat Detail</a>
+        </div>
+      </div>
+
+      <!-- Item Produk -->
+      <div class="min-w-[250px] relative group bg-white rounded-xl shadow hover:shadow-xl transition duration-300">
+        <img src="img/img3.jpg" alt="Produk 1" class="rounded-t-xl object-cover w-full h-64 group-hover:scale-105 transition-transform duration-300" />
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Motif Daun Elegan</h3>
+          <p class="text-sm text-gray-500">Cocok untuk ruang tamu atau ruang kerja.</p>
+          <a href="https://wa.me/6281234567890" target="_blank" class="mt-3 inline-block bg-green-500 text-white text-sm px-4 py-2 rounded-full hover:bg-green-600 transition">Lihat Detail</a>
+        </div>
+      </div>
+
+      <!-- Item Produk -->
+      <div class="min-w-[250px] relative group bg-white rounded-xl shadow hover:shadow-xl transition duration-300">
+        <img src="img/img4.jpg" alt="Produk 1" class="rounded-t-xl object-cover w-full h-64 group-hover:scale-105 transition-transform duration-300" />
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Motif Daun Elegan</h3>
+          <p class="text-sm text-gray-500">Cocok untuk ruang tamu atau ruang kerja.</p>
+          <a href="https://wa.me/6281234567890" target="_blank" class="mt-3 inline-block bg-green-500 text-white text-sm px-4 py-2 rounded-full hover:bg-green-600 transition">Lihat Detail</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Keunggulan Produk dengan Gambar -->
+<section class="py-16 bg-white" data-animate>
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-12">Keunggulan Produk Kami</h2>
+
+    <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
+      
+      <!-- Keunggulan 1 -->
+      <div class="p-6 bg-gray-50 rounded-xl hover:shadow-xl transition duration-300">
+        <img src="img/img1.jpg" alt="Handmade" class="mx-auto mb-4">
+        <h3 class="font-semibold text-lg mb-2">Handmade Berkualitas</h3>
+        <p class="text-sm text-gray-600">Dibuat langsung oleh pengrajin berpengalaman, detail dan rapi.</p>
+      </div>
+
+      <!-- Keunggulan 2 -->
+      <div class="p-6 bg-gray-50 rounded-xl hover:shadow-xl transition duration-300">
+        <img src="img/img2.jpg" alt="Tahan Karat" class="mx-auto mb-4">
+        <h3 class="font-semibold text-lg mb-2">Anti Karat</h3>
+        <p class="text-sm text-gray-600">Finishing menggunakan cat anti-karat khusus agar awet bertahun-tahun.</p>
+      </div>
+
+      <!-- Keunggulan 3 -->
+      <div class="p-6 bg-gray-50 rounded-xl hover:shadow-xl transition duration-300">
+        <img src="img/img3.jpg" alt="Interior" class="mx-auto mb-4">
+        <h3 class="font-semibold text-lg mb-2">Desain Estetik</h3>
+        <p class="text-sm text-gray-600">Motif daun & bunga alami, cocok untuk semua jenis interior rumah & cafe.</p>
+      </div>
+
+      <!-- Keunggulan 4 -->
+      <div class="p-6 bg-gray-50 rounded-xl hover:shadow-xl transition duration-300">
+        <img src="img/img4.jpg" alt="Custom" class="mx-auto mb-4">
+        <h3 class="font-semibold text-lg mb-2">Bisa Custom</h3>
+        <p class="text-sm text-gray-600">Tersedia opsi custom warna, ukuran, hingga bentuk sesuai permintaan.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Testimoni Interaktif -->
+<section class="py-16 bg-white" data-animate>
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Apa Kata Pelanggan Kami?</h2>
+
+    <!-- Slider -->
+    <div class="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4">
+      
+      <!-- Testimoni Card -->
+      <div class="min-w-[300px] bg-gray-100 rounded-xl p-6 shadow hover:shadow-xl transition snap-center">
+        <div class="flex items-center mb-4">
+          <img src="img/avatar2.png" alt="Rina" class="w-14 h-14 rounded-full mr-4">
+          <div>
+            <p class="font-semibold">Rina</p>
+            <p class="text-sm text-gray-500">Jakarta</p>
+          </div>
+        </div>
+        <p class="italic text-gray-700">“Cantik banget! Hiasan daun ini jadi titik fokus ruang tamu saya.”</p>
+      </div>
+
+      <!-- Testimoni Card -->
+      <div class="min-w-[300px] bg-gray-100 rounded-xl p-6 shadow hover:shadow-xl transition snap-center">
+        <div class="flex items-center mb-4">
+          <img src="img/avatar1.png" alt="Dedi" class="w-14 h-14 rounded-full mr-4">
+          <div>
+            <p class="font-semibold">Dedi</p>
+            <p class="text-sm text-gray-500">Bandung</p>
+          </div>
+        </div>
+        <p class="italic text-gray-700">“Kualitasnya bagus, kokoh dan sesuai foto. Admin juga ramah.”</p>
+      </div>
+
+      <!-- Tambah testimoni lainnya -->
+      <div class="min-w-[300px] bg-gray-100 rounded-xl p-6 shadow hover:shadow-xl transition snap-center">
+        <div class="flex items-center mb-4">
+          <img src="img/avatar2.png" alt="Sinta" class="w-14 h-14 rounded-full mr-4">
+          <div>
+            <p class="font-semibold">Sinta</p>
+            <p class="text-sm text-gray-500">Yogyakarta</p>
+          </div>
+        </div>
+        <p class="italic text-gray-700">“Suka banget! Pas dipasang di dinding kamar langsung berasa beda.”</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- FAQ Lebih Lengkap -->
+<section class="py-16 bg-gray-100" data-animate>
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Pertanyaan Umum (FAQ)</h2>
+    <div class="space-y-4">
+
+      <!-- FAQ 1 -->
+      <div class="bg-white p-4 rounded shadow">
+        <button class="font-semibold text-left w-full" onclick="toggleFAQ('faq1')">
+          Apakah bisa custom motif atau ukuran?
+        </button>
+        <p id="faq1" class="mt-2 hidden text-sm text-gray-700">
+          Bisa! Kami menerima request desain/motif sesuai kebutuhan Anda. Hubungi admin via WhatsApp untuk konsultasi desain.
+        </p>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="bg-white p-4 rounded shadow">
+        <button class="font-semibold text-left w-full" onclick="toggleFAQ('faq2')">
+          Apakah produk aman untuk dikirim jarak jauh?
+        </button>
+        <p id="faq2" class="mt-2 hidden text-sm text-gray-700">
+          Sangat aman. Produk kami dikemas menggunakan bubble wrap & karton tebal khusus untuk pengiriman.
+        </p>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="bg-white p-4 rounded shadow">
+        <button class="font-semibold text-left w-full" onclick="toggleFAQ('faq3')">
+          Bahan dasarnya apa?
+        </button>
+        <p id="faq3" class="mt-2 hidden text-sm text-gray-700">
+          Kami menggunakan besi hollow atau plat berkualitas tinggi yang dilapisi cat anti-karat dan finishing elegan.
+        </p>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="bg-white p-4 rounded shadow">
+        <button class="font-semibold text-left w-full" onclick="toggleFAQ('faq4')">
+          Apakah bisa pesan dalam jumlah banyak?
+        </button>
+        <p id="faq4" class="mt-2 hidden text-sm text-gray-700">
+          Bisa! Kami melayani pemesanan partai besar untuk interior kantor, cafe, atau reseller. Hubungi kami untuk penawaran khusus.
+        </p>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="bg-white p-4 rounded shadow">
+        <button class="font-semibold text-left w-full" onclick="toggleFAQ('faq5')">
+          Berapa lama waktu pembuatan dan pengiriman?
+        </button>
+        <p id="faq5" class="mt-2 hidden text-sm text-gray-700">
+          Untuk produk ready, pengiriman 1–2 hari kerja. Jika custom, proses produksi 3–7 hari tergantung kerumitan desain.
+        </p>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div class="bg-white p-4 rounded shadow">
+        <button class="font-semibold text-left w-full" onclick="toggleFAQ('faq6')">
+          Bagaimana cara pemasangan di dinding?
+        </button>
+        <p id="faq6" class="mt-2 hidden text-sm text-gray-700">
+          Mudah! Kami sertakan gantungan atau lubang baut di belakang produk. Cukup dikaitkan di paku atau mur dinding.
+        </p>
+      </div>
+
+      <!-- FAQ 7 -->
+      <div class="bg-white p-4 rounded shadow">
+        <button class="font-semibold text-left w-full" onclick="toggleFAQ('faq7')">
+          Apakah warnanya bisa pilih sendiri?
+        </button>
+        <p id="faq7" class="mt-2 hidden text-sm text-gray-700">
+          Ya, Anda bisa request warna sesuai tema ruangan. Pilihan warna disediakan saat konsultasi via admin.
+        </p>
+      </div>
+
+      <!-- FAQ 8 -->
+      <div class="bg-white p-4 rounded shadow">
+        <button class="font-semibold text-left w-full" onclick="toggleFAQ('faq8')">
+          Apakah tersedia katalog produk lengkap?
+        </button>
+        <p id="faq8" class="mt-2 hidden text-sm text-gray-700">
+          Tersedia! Anda bisa melihat katalog lengkap via WhatsApp atau TikTok Shop kami.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- CTA Akhir Interaktif -->
+<section class="py-20 bg-gradient-to-r from-green-600 to-green-500 text-white" data-animate>
+  <div class="max-w-5xl mx-auto px-6 text-center">
+
+    <h2 class="text-4xl font-extrabold mb-4 animate-fadeInUp">Percantik Rumah Anda Hari Ini!</h2>
+    <p class="text-lg mb-8 font-light animate-fadeInUp">
+      Ciptakan nuansa elegan & alami dengan hiasan dinding besi handmade. Siap kirim ke seluruh Indonesia 🚚
+    </p>
+
+    <!-- Tombol CTA -->
+    <a href="https://wa.me/6281234567890" target="_blank"
+       class="inline-flex items-center gap-3 bg-white text-green-600 hover:bg-gray-100 font-semibold text-lg px-8 py-4 rounded-full shadow-lg transition duration-300 animate-fadeInUp">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M20.52 3.48a11.8 11.8 0 0 0-16.7 0 11.8 11.8 0 0 0-2.79 12.3L0 24l8.38-2.2a11.8 11.8 0 0 0 5.7 1.45c3.2 0 6.23-1.25 8.49-3.51a11.8 11.8 0 0 0 0-16.7Zm-8.7 17.1a9.48 9.48 0 0 1-4.87-1.31l-.35-.21-4.97 1.3 1.33-4.84-.23-.37a9.5 9.5 0 1 1 9.09 5.43Zm5.22-6.94c-.29-.15-1.71-.84-1.97-.94s-.46-.15-.65.15-.74.93-.91 1.12-.34.22-.63.07a7.74 7.74 0 0 1-2.28-1.4 8.56 8.56 0 0 1-1.58-1.97c-.16-.27-.02-.42.12-.57.13-.13.29-.34.43-.5s.19-.29.29-.48a.6.6 0 0 0-.03-.56c-.07-.15-.65-1.56-.89-2.14-.23-.56-.47-.48-.65-.49l-.56-.01a1.07 1.07 0 0 0-.77.36 3.21 3.21 0 0 0-1 2.4c0 1.41 1.02 2.78 1.16 2.97.14.2 2 3.17 4.85 4.45 1.8.78 2.5.85 3.4.72.55-.08 1.71-.7 1.95-1.37.24-.67.24-1.25.17-1.37-.07-.12-.27-.2-.56-.35Z"/>
+      </svg>
+      Chat Sekarang via WhatsApp
+    </a>
+
+  </div>
+</section>
+
+
+  <!-- WhatsApp Popup -->
+  <div id="waPopup" class="hidden fixed bottom-6 right-6 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg z-50 animate-bounce">
+    <a href="https://wa.me/6289509306903" target="_blank">💬 Butuh bantuan? Chat Admin</a>
+  </div>
+
+</body>
+</html>
